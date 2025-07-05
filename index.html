@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🌤️ Weather App</h1>
+      <p>Beautiful weather, beautifully displayed</p>
+    </header>
+
+    <div class="search-bar">
+      <input type="text" id="locationInput" placeholder="Search for a city..." />
+      <button onclick="getWeather()">🔍 Search</button>
+      <button onclick="getWeatherByLocation()">📍 Use Current Location</button>
+    </div>
+
+    <div class="weather-card" id="weatherInfo">
+      <!-- Real-time weather info appears here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
